@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd         http://www.springframework.org/schema/data/jpa https://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <util:properties id="jdbcProps" location="classpath:jdbc.properties"/>
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource"
+          primary="true"
+          c:configuration="#{new com.zaxxer.hikari.HikariConfig(jdbcProps)}"/>
+
+
+    <util:properties id="hibernateProps" location="classpath:hibernate.properties"/>
+    <bean id="entityManagerFactory"
+          primary="true"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+          p:jpaVendorAdapter="#{new org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter()}"
+          p:dataSource-ref="dataSource"
+          p:persistenceUnitName="main"
+          p:jpaProperties="hibernateProps"
+          p:packagesToScan="com.spimex.jdtesttask.common.entity"/>
+
+    <bean id="transactionManager"
+          primary="true"
+          class="org.springframework.orm.jpa.JpaTransactionManager"/>
+
+    <jpa:repositories base-package="com.spimex.jdtesttask.repository"/>
+</beans>

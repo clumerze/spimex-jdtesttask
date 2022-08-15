@@ -1,0 +1,121 @@
+{
+  "id": 1,
+  "created": 1660548701.800679,
+  "cash": 3310,
+  "bonuses": 803,
+  "paymentHistory": [
+    {
+      "id": 1,
+      "created": 1660548727.433563,
+      "target": "ONLINE",
+      "amount": 100,
+      "sideTransactions": [
+        {
+          "id": 1,
+          "created": 1660548727.434767,
+          "target": "BONUS",
+          "amount": 17
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "created": 1660548727.47849,
+      "target": "SHOP",
+      "amount": 120,
+      "sideTransactions": [
+        {
+          "id": 2,
+          "created": 1660548727.479297,
+          "target": "BONUS",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "created": 1660548727.496193,
+      "target": "ONLINE",
+      "amount": 301,
+      "sideTransactions": [
+        {
+          "id": 3,
+          "created": 1660548727.497028,
+          "target": "BONUS",
+          "amount": 90
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "created": 1660548727.511716,
+      "target": "ONLINE",
+      "amount": 17,
+      "sideTransactions": [
+        {
+          "id": 4,
+          "created": 1660548727.512595,
+          "target": "COMMISSION",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "created": 1660548727.528508,
+      "target": "SHOP",
+      "amount": 1000,
+      "sideTransactions": [
+        {
+          "id": 5,
+          "created": 1660548727.529695,
+          "target": "BONUS",
+          "amount": 300
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "created": 1660548727.54754,
+      "target": "ONLINE",
+      "amount": 21,
+      "sideTransactions": [
+        {
+          "id": 6,
+          "created": 1660548727.548285,
+          "target": "BONUS",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "created": 1660548727.562928,
+      "target": "SHOP",
+      "amount": 570,
+      "sideTransactions": [
+        {
+          "id": 7,
+          "created": 1660548727.563542,
+          "target": "BONUS",
+          "amount": 171
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "created": 1660548727.579739,
+      "target": "ONLINE",
+      "amount": 700,
+      "sideTransactions": [
+        {
+          "id": 8,
+          "created": 1660548727.580639,
+          "target": "BONUS",
+          "amount": 210
+        }
+      ]
+    }
+  ],
+  "emoney": 3859
+}

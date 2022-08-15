@@ -1,0 +1,10 @@
+curl -i -X POST 'http://localhost:8080/api/payment/online/100'
+curl -i -X POST 'http://localhost:8080/api/payment/shop/120'
+curl -i -X POST 'http://localhost:8080/api/payment/online/301'
+curl -i -X POST 'http://localhost:8080/api/payment/online/17'
+curl -i -X POST 'http://localhost:8080/api/payment/shop/1000'
+curl -i -X POST 'http://localhost:8080/api/payment/online/21'
+curl -i -X POST 'http://localhost:8080/api/payment/shop/570'
+curl -i -X POST 'http://localhost:8080/api/payment/online/700'
+
+curl 'http://localhost:8080/api/bankAccountOfEMoney' | jq ''
